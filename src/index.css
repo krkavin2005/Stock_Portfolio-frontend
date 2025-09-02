@@ -1,0 +1,170 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: white;
+}
+
+body{
+  background-color: rgb(48, 47, 47);
+}
+
+#form{
+    background-color: rgb(19,31,36);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+    width: 300px;
+    
+}
+
+form{
+  width:300px;
+}
+
+form h1 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input {
+    background-color: rgb(199, 194, 194);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+form button {
+  margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+.container{
+  padding:10px 30px;
+  width:70%;
+  background-color: rgb(19,31,36);
+  margin:0 auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+}
+
+.display table thead th,td {
+  border-bottom: 1px solid white;
+  text-align: center;
+  padding: 10px;
+}
+
+.display table {
+  padding:10px;
+  width:100%;
+  border-collapse: collapse;
+  border-top:1px solid white;
+}
+
+.display{
+  margin-top: 30px;
+}
+
+.display div{
+  padding:10px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.display div button{
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.display div button:hover{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 20px rgba(255,255,255,0.5);
+}
+.buy{
+  background-color: rgb(132,277,203);
+}
+
+.sell{
+  background-color: rgb(214, 93, 93);
+  color: white;
+}
+
+.profit{
+  color:rgb(132, 227, 203);
+}
+
+.loss{
+  color:rgb(214, 93, 93);
+}
+
+.dashboard{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.dashboard span{
+  margin: 10px 0;
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+.stocklist{
+  width:90%;
+  margin: 20px auto;
+  background-color:rgb(74, 84, 86);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap:1rem;
+  height: 100vh;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.card{
+  border:1px solid white;
+  background-color: rgb(19,31,36);
+  width:200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+  transform: scale(1.05);
+}
+
+
+.card button{
+  padding: 10px 20px;
+  background-color: rgb(132, 227, 203);
+  border-radius: 10px;
+}
