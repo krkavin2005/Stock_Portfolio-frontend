@@ -7,6 +7,7 @@
 
 body{
   background-color: rgb(48, 47, 47);
+  background-color: rgb(2, 9, 24);
 }
 
 #form{
@@ -74,6 +75,7 @@ form button:hover {
 }
 
 .display table {
+  box-sizing: border-box;
   padding:10px;
   width:100%;
   border-collapse: collapse;
@@ -142,9 +144,14 @@ form button:hover {
   flex-wrap: wrap;
   padding: 10px;
   gap:1rem;
-  height: 100vh;
   align-items: flex-start;
   border-radius: 10px;
+}
+
+@media screen and (max-width:620px){
+  #min{
+    display:none;
+  }
 }
 
 .card{
@@ -167,4 +174,10 @@ form button:hover {
   padding: 10px 20px;
   background-color: rgb(132, 227, 203);
   border-radius: 10px;
+}
+
+.charts{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

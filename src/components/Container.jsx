@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Header from "./Header";
 import Display from "./Display";
+import Sellstock from "./Sellstock";
+import Charts from "./Charts";
 
 const DATA=[
     {
@@ -26,7 +28,9 @@ const Container=()=>{
     return(
         <div className="container">
             <Header list={list}/>
+            <Charts list={list}/>
             <Display list={list}/>
+            <Sellstock list={list}/>
         </div>
     )
 }

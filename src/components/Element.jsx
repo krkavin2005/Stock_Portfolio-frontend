@@ -6,7 +6,7 @@ const Element=(props)=>{
     return(
         <tr className="Element">
             <td>{stock.symbol}</td>
-            <td>{stock.company}</td>
+            <td id="min">{stock.company}</td>
             <td>{stock.qty}</td>
             <td>{stock.buy_price}</td>
             <td>{stock.cur_price}</td>

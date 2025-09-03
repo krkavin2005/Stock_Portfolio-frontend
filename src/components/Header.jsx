@@ -2,7 +2,7 @@ const Header=(props)=>{
     const {list}=props;
     let sum=0;
     let total=list.forEach(el => {
-        sum+=el.cur_price;
+        sum+=(el.cur_price*el.qty);
     });
     const getReview=()=>{
         let investment=0;

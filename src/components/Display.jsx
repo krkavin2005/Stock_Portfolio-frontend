@@ -8,7 +8,7 @@ const Display = (props) => {
                 <thead>
                     <tr>
                         <th>Symbol</th>
-                        <th>Company</th>
+                        <th id="min">Company</th>
                         <th>Qty</th>
                         <th>Buy Price</th>
                         <th>Current Price</th>
