@@ -1,7 +1,10 @@
 import Element from "./Element"
-
+import {NavLink} from "react-router"
 const Display = (props) => {
-    const { list } = props
+    const { list , setTrade} = props
+    const handleSell=()=>{
+        setTrade(true)
+    }
     return (
         <div className="display">
             <table>
@@ -20,8 +23,8 @@ const Display = (props) => {
                 </tbody>
             </table>
             <div>
-                <button className="buy">Buy Stock</button>
-                <button className="sell">Sell Stock</button>
+                <NavLink to="/stocklist"><button className="buy">Buy Stock</button></NavLink>
+                <button className="sell" onClick={handleSell}>Sell Stock</button>
             </div>
         </div>
     )

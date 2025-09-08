@@ -1,6 +1,7 @@
 import Stockcard from "./Stockcard";
 
-const Stocklist=()=>{
+const Stocklist=(props)=>{
+    const {addStock}=props
     const list=[
         {
             symbol:"AAPL",
@@ -25,8 +26,8 @@ const Stocklist=()=>{
     ]
     return (
         <div className="stocklist">
-            {list.map(el=>{
-                return <Stockcard stock={el}/>
+            {list.map((el,index)=>{
+                return <Stockcard key={index} stock={el} addStock={addStock}/>
             })}
         </div>
     )
