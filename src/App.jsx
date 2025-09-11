@@ -50,10 +50,11 @@ const App=()=>{
       const arr=list.map(el=>{
         if(el.symbol==symbol) {
           el.qty-=qty;
+          console.log(el.qty)
         }
         return el;
       }).filter(el=>el.qty>0)
-      calcGainLoss(arr)
+      setList(arr)
     }
     
     useEffect(() => calcGainLoss(list), [])

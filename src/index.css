@@ -107,7 +107,7 @@ form button:hover {
   box-shadow: 1px 1px 20px rgba(255,255,255,0.5);
 }
 .buy{
-  background-color: rgb(132,277,203);
+  background-color: rgb(132,227,203);
 }
 
 .sell{
@@ -140,13 +140,36 @@ form button:hover {
   width:90%;
   margin: 20px auto;
   background-color:rgb(74, 84, 86);
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.stocklistblock{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 10px;
   gap:1rem;
   align-items: flex-start;
+}
+
+.return{
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
   border-radius: 10px;
+  background-color: rgb(41, 78, 130);
+  color: white;
+  font-size:large;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.return:hover{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px rgba(255,255,255,0.5);
 }
 
 @media screen and (max-width:620px){
@@ -206,12 +229,17 @@ form button:hover {
 .sellitem{
   border: 1px solid white;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
   background-color: black;
+}
+
+.sellitemspan{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  width: max-content;
 }
 
 .sellitem span{
@@ -224,6 +252,7 @@ form button:hover {
   padding: 10px;
   border-radius: 10px;
   background-color: rgb(214, 93, 93);
+  border: none;
 }
 
 .sellqty{

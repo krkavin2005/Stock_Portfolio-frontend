@@ -7,6 +7,7 @@ const Sellstock=(props)=>{
         <div className="sellstock" style={{display:trade?"flex":"none"}}>
             <h1>Select</h1>
             {list.map(el=> <Sellitem stock={el} setTrade={setTrade} removeStock={removeStock}/>)}
+            <button className="return" onClick={()=>setTrade(false)} style={{width:"auto"}}>Return</button>
         </div>
     )
 }

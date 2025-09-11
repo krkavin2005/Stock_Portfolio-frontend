@@ -8,8 +8,8 @@ const Element=(props)=>{
             <td>{stock.symbol}</td>
             <td id="min">{stock.company}</td>
             <td>{stock.qty}</td>
-            <td>{stock.buy_price}</td>
-            <td>{stock.cur_price}</td>
+            <td>${stock.buy_price}</td>
+            <td>${stock.cur_price}</td>
             <td className={getClassName()}>{`${(stock.gl>0)?"+":""}`}{stock.gl}%</td>
         </tr>
     )
